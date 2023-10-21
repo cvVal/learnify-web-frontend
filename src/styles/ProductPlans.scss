@@ -1,0 +1,135 @@
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--slider {
+    display: flex;
+    gap: 10px;
+    height: 316px;
+    margin: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    /* Esto ajusta (regresa o jala ) la tarjeta si no pasas a la siguiente. Es como una ayuda para mantener la tarjeta enfocada */
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--ash-gray);
+    border: 3px solid var(--tyrian-purple-soft);
+    border-radius: 15px;
+    box-shadow: 0 8px 4px rgba(57, 1, 47, 0.16);
+}
+
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 7px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 15px;
+}
+
+.plan-card--saving {
+    font-size: 1rem;
+    color: var(--tyrian-purple);
+}
+
+.plan-card-ca {
+    width: 200px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card-ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+
+.plan-card-ca {
+    box-shadow: inset 0 0 0 0 var(--orange);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.plan-card-ca:hover {
+    color: var(--just-white);
+    box-shadow: inset 200px 0 0 0 var(--warm-black);
+}
+
+@media screen and (min-width: 930px) {
+
+    .plans-container--slider {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,143 @@
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-image-container {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.main-image-container .background-img {
+    width: 100%;
+    min-width: 320px;
+    min-height: 300px;
+    height: 25vh;
+    background-image: url('../assets/img/domenico-loia-hGV2TfOh0ns-unsplash-medium.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.main-product-detail {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--button {
+    display: flex;
+    width: 300px;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.product-detail--button a {
+    height: auto;
+    margin: 0 auto;
+}
+
+.product-detail--button button {
+    width: inherit;
+    padding: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    border: 1px solid var(--orange);
+    border-radius: 15px;
+    color: var(--just-white);
+    background-color: var(--warm-black);
+    box-shadow: inset 0 0 0 0 var(--orange);
+    transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.product-detail--button button:hover {
+    box-shadow: inset 300px 0 0 0 var(--orange);
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    /* Esto ayuda a evitar un overflow con su texto */
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock {
+    background-image: url('../assets/icons/clock.svg');
+}
+
+.eye {
+    background-image: url('../assets/icons/eye.svg');
+}
+
+.dollar-sign {
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+
+.check-circle {
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #c9c9c9;
+}
+
+@media screen and (min-width: 930px) {
+
+    .main-image-container {
+        height: 400px;
+    }
+
+    .main-image-container .background-img {
+        min-height: 400px;
+    }
+
+    .product-cards--container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        margin: 0 auto;
+    }
+
+    .order-clock {
+        order: 3;
+    }
+
+    .plans-container--slider {
+        justify-content: center;
+    }
+}

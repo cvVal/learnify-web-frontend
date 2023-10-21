@@ -1,0 +1,43 @@
+@import 'vars';
+
+.nav-main-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+}
+
+.nav-main-wrapper--burger-icon {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 2.6rem;
+    // height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--just-white);
+}
+
+.sidebar-nav-menu {
+    width: 15vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: 350ms;
+    // z-index: 1;
+    background: var(--orange);
+}
+
+.is-open {
+    left: 0;
+}
+
+.is-closed {
+    left: -100%;
+}
+
+.sidebar-nav-menu-wrap {
+    width: 100%;
+}

@@ -1,0 +1,86 @@
+@import 'vars';
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    /* El tamano mas chico que tendra */
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(315deg, #2e0219 8%, #6a0f49 40%);
+    // background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    align-self: center;
+    filter: brightness(1200%);
+}
+
+.header__logo-text {
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    /* Esto da el espacio de altura del texto */
+    line-height: 2.8rem;
+    color: var(--orange);
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--ash-gray);
+}
+
+.header__title-container .header__button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    border: 1px solid var(--black);
+    background-color: var(--off-white);
+    /* Shadow */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/down-arrow.svg');
+}
